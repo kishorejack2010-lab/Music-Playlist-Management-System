@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TamilBeats – Login</title>
+<link rel="stylesheet" href="css/login.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="login-wrapper">
+  <div class="login-card">
+    <div class="logo-area">
+      <div class="logo-icon">♪</div>
+      <h1 class="logo-text">TamilBeats</h1>
+      <p class="logo-sub">உங்கள் இசை உலகம்</p>
+    </div>
+    <div class="form-area">
+      <h2>Welcome Back</h2>
+      <p class="form-sub">Sign in to continue your music journey</p>
+      <div class="input-group">
+        <label>Email or Username</label>
+        <div class="input-wrap">
+          <span class="input-icon">✉</span>
+          <input type="text" id="username" placeholder="Enter your email" autocomplete="off">
+        </div>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <div class="input-wrap">
+          <span class="input-icon">🔒</span>
+          <input type="password" id="password" placeholder="Enter your password">
+          <span class="toggle-pw" onclick="togglePw()">👁</span>
+        </div>
+      </div>
+      <div class="remember-row">
+        <label class="check-label">
+          <input type="checkbox" id="remember">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot">Forgot password?</a>
+      </div>
+      <button class="btn-login" onclick="doLogin()">
+        <span>Sign In</span>
+        <span class="btn-arrow">→</span>
+      </button>
+      <div class="divider"><span>or continue with</span></div>
+      <div class="social-row">
+        <button class="social-btn" onclick="doLogin()">G Google</button>
+        <button class="social-btn" onclick="doLogin()">f Facebook</button>
+      </div>
+      <p class="signup-prompt">Don't have an account? <a href="#" onclick="doLogin()">Sign up free</a></p>
+    </div>
+  </div>
+  <div class="side-art">
+    <div class="art-text">
+      <h2>🎵 10+ Tamil Artists</h2>
+      <p>Enjoy thousands of Tamil hits from your favourite artists. Stream, save, and discover music you love.</p>
+      <div class="art-stats">
+        <div class="stat"><span class="stat-n">90+</span><span class="stat-l">Songs</span></div>
+        <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Artists</span></div>
+        <div class="stat"><span class="stat-n">∞</span><span class="stat-l">Memories</span></div>
+      </div>
+    </div>
+    <div class="floating-notes">
+      <span class="fn fn1">♩</span>
+      <span class="fn fn2">♪</span>
+      <span class="fn fn3">♫</span>
+      <span class="fn fn4">♬</span>
+      <span class="fn fn5">🎵</span>
+      <span class="fn fn6">🎶</span>
+    </div>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+<script src="js/login.js"></script>
+</body>
+</html>
